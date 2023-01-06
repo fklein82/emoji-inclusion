@@ -1,3 +1,14 @@
+## Tanzu Application Platform Accelerator
+
+To add the accelerator in Tanzu Application Platform
+
+~~~
+tanzu acc create inclusion --git-repo https://github.com/fklein82/emoji-inclusion --git-branch main --interval 5s\n
+~~~
+
+## Service Binding with PostgreSQL
+
+~~~
 ```
 NAMESPACE=default
 
@@ -16,3 +27,4 @@ kubectl create secret generic db-binding-compatible --from-literal=type=postgres
  
  kubectl apply -f config/workload.yaml -n $NAMESPACE
 ```
+~~~
