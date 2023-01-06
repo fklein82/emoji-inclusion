@@ -26,7 +26,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: fklein
+  name: fred
 spec:
   profile:
     displayName: Frederic KLEIN
