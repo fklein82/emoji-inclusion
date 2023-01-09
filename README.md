@@ -15,9 +15,12 @@ tanzu acc create inclusion --git-repo https://github.com/fklein82/emoji-inclusio
 
 ~~~
 ```
-NAMESPACE=default
+NAMESPACE=dev
 
 helm repo add bitnami https://charts.bitnami.com/bitnami
+
+helm install emoji oci://harbor.emea.end2end.link/vac-global-library/charts/centos-7/postgresql --set auth.database=emoji --set global.postgresql.auth.existingSecret=db-binding-compatible -n dev
+
 helm install emoji bitnami/postgresql --set global.postgresql.auth.postgresPassword=password \
   --set global.postgresql.auth.database=emoji -n $NAMESPACE
 
