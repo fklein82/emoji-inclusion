@@ -1,6 +1,6 @@
 accelerator:
-  displayName: Inclusion
-  description: Demonstrates service binding capabilites via inclusion
+  displayName: Inclusion Backend
+  description: Backend API using Persistent Storage via TAP service binding capabilites.
   iconUrl: https://github.com/tsalm-pivotal/emoji-inclusion/raw/main/acclerator.png
   tags:
     - java
