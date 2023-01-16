@@ -1,6 +1,6 @@
 allow_k8s_contexts('tap-demo1-3')
 
-SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='https://registry.fklein.me/myproject/workloads/inclusion-backend-api-dev:b5.20230115.225942')
+SOURCE_IMAGE = os.getenv("SOURCE_IMAGE")
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='dev')
 

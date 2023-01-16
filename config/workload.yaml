@@ -29,3 +29,9 @@ spec:
       system: emoji-world
       owner: team-vmware-tanzu-se
       description: "A set of API endpoints to manage the resources within the inclusion app."
+  serviceClaims:
+    - name: db
+      ref:
+        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+        kind: ResourceClaim
+        name: db-binding-compatible
