@@ -5,3 +5,5 @@ spring:
   datasource:
     url: jdbc:h2:mem:EMOJI
 logging.level.org.hibernate: DEBUG
+
+management.endpoints.web.exposure.include=*
